@@ -21,9 +21,10 @@ class _HomeState extends State<Home> {
   List<CategoryModel> categories = [];
   List<SliderModel> sliders = [];
   List<ArticleModel> articles = [];
-  bool _loading = true;
+  
 
   int activeIndex = 0;
+  bool _loading = true;
   @override
   void initState() {
     categories = getCategories();
