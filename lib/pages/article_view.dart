@@ -43,7 +43,8 @@ class _ArticleViewState extends State<ArticleView> {
     if (WebViewPlatform.instance is AndroidWebViewPlatform) {
       AndroidWebViewController.enableDebugging(true);
       (WebViewPlatform.instance as AndroidWebViewPlatform)
-          .useHybridComposition = true;
+              .useHybridComposition =
+          true;
     }
   }
 
@@ -51,8 +52,11 @@ class _ArticleViewState extends State<ArticleView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Article'),
-        backgroundColor: Colors.blueAccent,
+        title: const Text(
+          'Article Details',
+          style: TextStyle(fontSize: 20.5, fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Colors.white,
       ),
       body: WebViewWidget(controller: _controller),
     );

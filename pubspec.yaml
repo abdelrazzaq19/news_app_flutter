@@ -41,6 +41,7 @@ dependencies:
   cached_network_image: ^3.4.1
   webview_flutter_android: ^4.10.5
   webview_flutter: ^4.13.0
+  flutter_native_splash: ^2.4.7
   
 
 dev_dependencies:
