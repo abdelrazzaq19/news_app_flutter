@@ -68,7 +68,7 @@ class _LandingPageState extends State<LandingPage> {
                     ),
                     child: const Center(
                       child: Text(
-                        "Let's read a new news",
+                        "Let's readed a latest update news",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 17.0,
