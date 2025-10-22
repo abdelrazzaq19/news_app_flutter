@@ -21,7 +21,6 @@ class _HomeState extends State<Home> {
   List<CategoryModel> categories = [];
   List<SliderModel> sliders = [];
   List<ArticleModel> articles = [];
-  
 
   int activeIndex = 0;
   bool _loading = true;
@@ -49,7 +48,10 @@ class _HomeState extends State<Home> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Flutter"),
+            Text(
+              "Flutter",
+              style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
+            ),
             Text(
               "News",
               style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
@@ -98,6 +100,8 @@ class _HomeState extends State<Home> {
                           Text(
                             "View All",
                             style: TextStyle(
+                              decoration: TextDecoration.underline,
+                              decorationColor: Colors.blue,
                               color: Colors.blue,
                               fontWeight: FontWeight.w500,
                               fontSize: 16.0,
@@ -143,7 +147,7 @@ class _HomeState extends State<Home> {
                             ),
                           ),
                           Text(
-                            "View All",
+                            "View Details",
                             style: TextStyle(
                               decoration: TextDecoration.underline,
                               decorationColor: Colors.blue,
@@ -271,13 +275,21 @@ class CategoryTile extends StatelessWidget {
 
 class BlogTile extends StatelessWidget {
   String imageUrl, title, desc, url;
-  BlogTile({required this.desc, required this.imageUrl, required this.title, required this.url});
+  BlogTile({
+    required this.desc,
+    required this.imageUrl,
+    required this.title,
+    required this.url,
+  });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) => ArticleView(blogUrl: url)));
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => ArticleView(blogUrl: url)),
+        );
       },
       child: Container(
         margin: EdgeInsets.only(bottom: 10.0),

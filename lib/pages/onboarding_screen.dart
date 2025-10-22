@@ -32,8 +32,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       color: Colors.green,
     ),
     OnboardingData(
-      title: 'Berita dari Seluruh Dunia',
-      description: 'Akses berita terkini dari berbagai sumber terpercaya di seluruh dunia',
+      title: 'News from Around the World',
+      description: 'Access the latest news from various trusted sources around the world',
       icon: Icons.public,
       color: Colors.blue,
     ),
@@ -45,7 +45,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     ),
     OnboardingData(
       title: 'Notifikasi Real-time',
-      description: 'Dapatkan pemberitahuan instan untuk berita terpenting',
+      description: 'Get instant notifications for the most important news',
       icon: Icons.notifications_active,
       color: Colors.amber,
     ),
