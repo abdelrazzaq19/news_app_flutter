@@ -53,7 +53,7 @@ class _ArticleViewState extends State<ArticleView> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Article Details',
+          'News Details',
           style: TextStyle(fontSize: 20.5, fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.white,
